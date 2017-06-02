@@ -6,7 +6,7 @@
         "Windows",
         "WEBRDP"
     ],
-    "iconUri": "https://github.com/Azure/azure-devtestlab/raw/master/Artifacts/windows-vscode/vscode%20icon.png",
+    "iconUri": "https://shuk06-my.sharepoint.com/personal/syed_shuk06_onmicrosoft_com/_layouts/15/guestaccess.aspx?docid=170c5247fd9664ac89af5beda6036364a&authkey=AaFHc8Vve_8ukS4KElnjdKQ",
     "targetOsType": "Windows",
     "runCommand": {
         "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File webRDP-Gateway.ps1"
