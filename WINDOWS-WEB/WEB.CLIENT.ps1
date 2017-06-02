@@ -46,6 +46,18 @@ if((Test-Path "$setupFolder\webRDP-Client_1.2.0.42-32.exe") -eq $false)
     }    
 }
 
+# upload license
+Write-Host "upload license file.."
+if((Test-Path "$setupFolder\G7_CR_Technologies-license.swl") -eq $false)
+{
+    Write-Host "upload license file G7_CR_Technologies-license.swl"
+    if ($os_type -eq "True"){
+        Download-File "https://shuk06-my.sharepoint.com/personal/syed_shuk06_onmicrosoft_com/_layouts/15/guestaccess.aspx?docid=1bde5d1ccd0274f408bee17afeda1b987&authkey=Ae-GknK-TWpfRNUKPx565Ms" "$setupFolder\G7_CR_Technologies-license.swl"
+    }else {
+        Write-Host "32 Bit system is not supported"
+    }    
+}
+
 # Prepare Configuration file
 Write-Host "Preparing configuration file.."
 if((Test-Path "$setupFolder\webrdpClient.inf") -eq $false)
@@ -60,7 +72,7 @@ if((Test-Path "$setupFolder\webrdpClient.inf") -eq $false)
 
 
 
-Write-Host "Installing SQL Server.."
+Write-Host "Installing WEB-RDP CLIENT.."
 Start-Process -FilePath "$setupFolder\webRDP-Client_1.2.0.42-32.exe" -ArgumentList '/ConfigurationFile="C:\WEBRDPCLIENT\training\webrdpClient.inf"'
 Write-Host 'Installation completed.'
 

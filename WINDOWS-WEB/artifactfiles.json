@@ -1,5 +1,5 @@
 {
-    "$schema": "https://raw.githubusercontent.com/Azure/azure-devtestlab/master/schemas/2016-11-28/dtlArtifacts.json",
+    "$schema": "https://github.com/SYED1306/WEB_CLIENT/blob/master/WINDOWS-WEB/artifactfiles.json",
     "title": "WEBRDP-CLIENT",
     "description": "webRDP-Client_1.2.0.42-32.exe",
     "tags": [
@@ -9,6 +9,6 @@
     "iconUri": "https://shuk06-my.sharepoint.com/personal/syed_shuk06_onmicrosoft_com/_layouts/15/guestaccess.aspx?docid=170c5247fd9664ac89af5beda6036364a&authkey=AaFHc8Vve_8ukS4KElnjdKQ",
     "targetOsType": "Windows",
     "runCommand": {
-        "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File webRDP-Gateway.ps1"
+        "commandToExecute": "powershell.exe -ExecutionPolicy bypass -File WEB.CLIENT.ps1"
     }
 }
